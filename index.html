@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assignment-03</title>
+    <!-- DaisyUi-Link -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Font-Awesome-Link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- Custom-Color -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              btn_main: "#aaef5e",
+              nav_color: "#494949",
+              gray_4: "#737373",
+              gray_1: "#E9E9E9",
+              btn_h: "#ABEF5F80",
+              grey_3: "#A0A0A0",
+              grey_5: "#494949",
+              grey_6: "#212121",
+              grey_7: "#1C1C1C",
+              background: "#F4F4F4",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body>
+    <!-- Header-Section -->
+    <header>
+      <nav>
+        <div class="navbar bg-base-100 w-11/12 mx-auto flex justify-between">
+          <div class="navbar-start">
+            <i
+              class="fa-solid fa-arrow-right bg-btn_main p-2 -rotate-45 rounded-full mr-2"
+            ></i>
+            <a class="text-3xl font-bold">Rinterio</a>
+          </div>
+
+          <div class="navbar-center hidden lg:flex">
+            <ul
+              class="menu menu-horizontal px-1 text-thin text-gray_4 lg:text-xl font-base"
+            >
+              <li
+                class="hover:text-nav_color hover:font-bold ease-in-out duration-300"
+              >
+                <a>Home</a>
+              </li>
+              <li
+                class="hover:text-nav_color hover:font-bold ease-in-out duration-300"
+              >
+                <a>Services</a>
+              </li>
+              <li
+                class="hover:text-nav_color hover:font-bold ease-in-out duration-300"
+              >
+                <a>Portfolio</a>
+              </li>
+              <li
+                class="hover:text-nav_color hover:font-bold ease-in-out duration-300"
+              >
+                <a>Blogs</a>
+              </li>
+              <li
+                class="hover:text-nav_color hover:font-bold ease-in-out duration-300"
+              >
+                <a>Contact Us</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="navbar-end hidden md:flex">
+            <i
+              class="fa-solid fa-magnifying-glass bg-gray_1 text-gray_4 rounded-full p-3 mr-2"
+            ></i>
+            <i
+              class="fa-solid fa-cart-shopping bg-gray_1 text-gray_4 rounded-full p-3 mr-2"
+            ></i>
+            <a class="btn bg-btn_main font-semibold text-xl rounded-full">
+              Book Consult
+              <i
+                class="fa-solid fa-arrow-right p-2 -rotate-45 rounded-full bg-black text-white"
+              ></i
+            ></a>
+          </div>
+
+          <div class="dropdown">
+            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+              <i
+                class="fa-solid fa-bars bg-gray_1 text-gray_4 rounded-full p-3"
+              ></i>
+            </div>
+            <ul
+              tabindex="0"
+              class="menu menu-sm dropdown-content rounded-box z-[1] mt-3 w-52 p-2 shadow right-0"
+            >
+              <li class="hover:text-nav-color ease-in-out duration-300">
+                <a>Home</a>
+              </li>
+              <li class="hover:text-nav_color ease-in-out duration-300">
+                <a>Services</a>
+              </li>
+              <li class="hover:text-nav_color ease-in-out duration-300">
+                <a>Portfolio</a>
+              </li>
+              <li class="hover:text-nav_color ease-in-out duration-300">
+                <a>Blogs</a>
+              </li>
+              <li class="hover:text-nav_color ease-in-out duration-300">
+                <a>Contact Us</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!-- banner-section -->
+      <div class="w-11/12 mx-auto my-10">
+        <div>
+          <img class="mx-auto" src="assets/banner.png" alt="" />
+        </div>
+        <!-- text-container -->
+        <div class="text-center space-y-8">
+          <h1 class="font-bold text-6xl">
+            A barn house of this design has a striking appearance
+          </h1>
+          <p>
+            The barn house captivates with its blend of rustic charm and modern
+            sophistication, featuring weathered wood, sleek metal accents, and
+            large windows that flood the space with natural light.
+          </p>
+          <div>
+            <button
+              class="btn bg-btn_h rounded-full text-lg font-semibold text-gray_6 hover:bg-lime-200"
+            >
+              View Details
+              <i
+                class="fa-solid fa-arrow-right p-2 -rotate-45 rounded-full mr-2 bg-btn_main"
+              ></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- header-section-ends -->
+  </body>
+</html>
