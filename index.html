@@ -37,6 +37,10 @@
               gray_6: "#212121",
               gray_7: "#1C1C1C",
               background: "#F4F4F4",
+              card_1: "#E7C1D3",
+              card_2: "#EFDA6E",
+              card_3: "#A4DAC3",
+              card_4: "#77AAEA",
             },
           },
         },
@@ -48,58 +52,58 @@
     <header>
       <nav>
         <div
-          class="navbar bg-base-100 w-11/12 mx-auto flex justify-between bg-background"
+          class="flex justify-between w-11/12 mx-auto navbar bg-base-100 bg-background"
         >
           <div class="navbar-start">
             <i
-              class="fa-solid fa-arrow-right bg-btn_main p-2 -rotate-45 rounded-full mr-2"
+              class="p-2 mr-2 -rotate-45 rounded-full fa-solid fa-arrow-right bg-btn_main"
             ></i>
             <a class="text-3xl font-bold">Rinterio</a>
           </div>
 
-          <div class="navbar-center hidden lg:flex">
+          <div class="hidden navbar-center lg:flex">
             <ul
-              class="menu menu-horizontal px-1 text-thin text-gray_4 lg:text-xl font-base"
+              class="px-1 menu menu-horizontal text-thin text-gray_4 lg:text-xl font-base"
             >
               <li
-                class="hover:text-nav_color hover:font-bold ease-in-out duration-300"
+                class="duration-300 ease-in-out hover:text-nav_color hover:font-bold"
               >
                 <a>Home</a>
               </li>
               <li
-                class="hover:text-nav_color hover:font-bold ease-in-out duration-300"
+                class="duration-300 ease-in-out hover:text-nav_color hover:font-bold"
               >
                 <a>Services</a>
               </li>
               <li
-                class="hover:text-nav_color hover:font-bold ease-in-out duration-300"
+                class="duration-300 ease-in-out hover:text-nav_color hover:font-bold"
               >
                 <a>Portfolio</a>
               </li>
               <li
-                class="hover:text-nav_color hover:font-bold ease-in-out duration-300"
+                class="duration-300 ease-in-out hover:text-nav_color hover:font-bold"
               >
                 <a>Blogs</a>
               </li>
               <li
-                class="hover:text-nav_color hover:font-bold ease-in-out duration-300"
+                class="duration-300 ease-in-out hover:text-nav_color hover:font-bold"
               >
                 <a>Contact Us</a>
               </li>
             </ul>
           </div>
 
-          <div class="navbar-end hidden md:flex">
+          <div class="hidden navbar-end md:flex">
             <i
-              class="fa-solid fa-magnifying-glass bg-white text-gray_4 rounded-full p-3 mr-2"
+              class="p-3 mr-2 bg-white rounded-full fa-solid fa-magnifying-glass text-gray_4"
             ></i>
             <i
-              class="fa-solid fa-cart-shopping bg-white text-gray_4 rounded-full p-3 mr-2"
+              class="p-3 mr-2 bg-white rounded-full fa-solid fa-cart-shopping text-gray_4"
             ></i>
-            <a class="btn bg-btn_main font-semibold text-xl rounded-full">
+            <a class="text-xl font-semibold rounded-full btn bg-btn_main">
               Book Consult
               <i
-                class="fa-solid fa-arrow-right p-2 -rotate-45 rounded-full bg-black text-white"
+                class="p-2 text-white -rotate-45 bg-black rounded-full fa-solid fa-arrow-right"
               ></i
             ></a>
           </div>
@@ -107,26 +111,26 @@
           <div class="dropdown">
             <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
               <i
-                class="fa-solid fa-bars bg-gray_1 text-gray_4 rounded-full p-3"
+                class="p-3 rounded-full fa-solid fa-bars bg-gray_1 text-gray_4"
               ></i>
             </div>
             <ul
               tabindex="0"
               class="menu menu-sm dropdown-content rounded-box z-[1] mt-3 w-52 p-2 shadow right-0"
             >
-              <li class="hover:text-nav-color ease-in-out duration-300">
+              <li class="duration-300 ease-in-out hover:text-nav-color">
                 <a>Home</a>
               </li>
-              <li class="hover:text-nav_color ease-in-out duration-300">
+              <li class="duration-300 ease-in-out hover:text-nav_color">
                 <a>Services</a>
               </li>
-              <li class="hover:text-nav_color ease-in-out duration-300">
+              <li class="duration-300 ease-in-out hover:text-nav_color">
                 <a>Portfolio</a>
               </li>
-              <li class="hover:text-nav_color ease-in-out duration-300">
+              <li class="duration-300 ease-in-out hover:text-nav_color">
                 <a>Blogs</a>
               </li>
-              <li class="hover:text-nav_color ease-in-out duration-300">
+              <li class="duration-300 ease-in-out hover:text-nav_color">
                 <a>Contact Us</a>
               </li>
             </ul>
@@ -139,8 +143,8 @@
           <img class="mx-auto" src="assets/banner.png" alt="" />
         </div>
         <!-- text-container -->
-        <div class="text-center space-y-8">
-          <h1 class="font-bold text-6xl">
+        <div class="space-y-8 text-center">
+          <h1 class="text-6xl font-bold">
             A barn house of this design has a striking appearance
           </h1>
           <p>
@@ -150,11 +154,11 @@
           </p>
           <div>
             <button
-              class="btn bg-btn_h rounded-full text-lg font-semibold text-gray_6 hover:bg-lime-200 mb-10"
+              class="mb-10 text-lg font-semibold rounded-full btn bg-btn_h text-gray_6 hover:bg-lime-200"
             >
               View Details
               <i
-                class="fa-solid fa-arrow-right p-2 -rotate-45 rounded-full mr-2 bg-btn_main"
+                class="p-2 mr-2 -rotate-45 rounded-full fa-solid fa-arrow-right bg-btn_main"
               ></i>
             </button>
           </div>
@@ -163,20 +167,21 @@
     </header>
     <!-- header-section-ends -->
     <!-- main-section-start -->
-    <main class="bg-gray_1 p-6">
+    <main class="p-6 bg-gray_1">
+      <!-- design thoughtful section-start -->
       <div class="w-11/12 mx-auto mt-4">
         <div
-          class="flex flex-col flex-1 md:flex-row justify-center items-center gap-4"
+          class="flex flex-col items-center justify-center flex-1 gap-4 md:flex-row"
         >
           <div class="flex-1 space-y-3">
             <img
-              class="hidden md:block lg:flex mb-2 rotate-6 -ml-10"
+              class="hidden mb-2 -ml-10 md:block lg:flex rotate-6"
               src="assets/Vector.png"
               alt=""
             />
             <div class="flex justify-center sm:justify-start">
-              <button class="bg-white rounded-full px-10 py-3">
-                <i class="fa-solid fa-arrow-right mr-3"></i>About Us
+              <button class="px-10 py-3 bg-white rounded-full">
+                <i class="mr-3 fa-solid fa-arrow-right"></i>About Us
               </button>
             </div>
 
@@ -185,18 +190,18 @@
             >
               We design thoughtful,<br />liveable spaces
             </h3>
-            <p class="text-gray_5 text-center md:text-left">
+            <p class="text-center text-gray_5 md:text-left">
               The barn house captivates with its blend of rustic charm and
               modern sophistication, featuring weathered wood, sleek metal
               accents
             </p>
             <div class="flex flex-wrap gap-4">
               <div
-                class="bg-white rounded-md shadow flex py-6 px-4 gap-6 items-center"
+                class="flex items-center gap-6 px-4 py-6 bg-white rounded-md shadow"
               >
                 <img class="w-16 h-16" src="assets/commercial.png" alt="" />
                 <div class="flex flex-col gap-2">
-                  <h4 class="text-gray_5 font-semibold">Commercial</h4>
+                  <h4 class="font-semibold text-gray_5">Commercial</h4>
                   <p class="text-gray_4">
                     The barn house captivates with its blend of rustic charm and
                     modern sophistication, featuring weathered wood, sleek metal
@@ -205,11 +210,11 @@
                 </div>
               </div>
               <div
-                class="bg-white rounded-md shadow flex py-6 px-4 gap-6 mb-8 items-center"
+                class="flex items-center gap-6 px-4 py-6 mb-8 bg-white rounded-md shadow"
               >
                 <img class="w-16 h-16" src="assets/residential.png" alt="" />
                 <div class="flex flex-col gap-2">
-                  <h4 class="text-gray_5 font-semibold">Residential</h4>
+                  <h4 class="font-semibold text-gray_5">Residential</h4>
                   <p class="text-gray_4">
                     The barn house captivates with its blend of rustic charm and
                     modern sophistication, featuring weathered wood, sleek metal
@@ -221,13 +226,69 @@
           </div>
           <div class="flex-1 h-full">
             <img
-              class="w-full h-full object-cover"
+              class="object-cover w-full h-full"
               src="assets/Rectangle.png"
               alt="Image description"
             />
           </div>
         </div>
       </div>
+      <!-- design thoughtful section-end -->
+
+      <!-- Works Process -->
+      <section class="">
+        <!-- text-container -->
+        <div
+          class="flex flex-col items-center justify-center w-11/12 mx-auto my-10 space-y-4"
+        >
+          <div>
+            <button class="px-8 py-3 bg-white rounded-full">
+              <i class="mr-2 fa-solid fa-arrow-right"></i>How we works
+            </button>
+          </div>
+          <h3 class="text-4xl font-bold text-gray_6">Our Works Process</h3>
+          <p class="text-sm text-gray_4">
+            The barn house captivates with its blend of rustic charm and modern
+            sophistication, featuring weathered wood, sleek metal accents.
+          </p>
+        </div>
+      </section>
+      <!-- card  -->
+      <section class="grid w-11/12 grid-cols-1 gap-6 mx-auto lg:grid-cols-4 md:grid-cols-2">
+        <div class="p-6 rounded-md bg-card_1">
+          <img src="assets/concept.png" alt="" />
+          <h3 class="my-3 font-semibold text-gray_7">Concept</h3>
+          <p class="text-sm text-gray_5">
+            The barn house captivates with its blend of rustic charm and modern.
+          </p>
+        </div>
+        <div class="p-6 rounded-md bg-card_2">
+          <img src="assets/flow-chart.png" alt="" />
+          <h3 class="my-3 font-semibold text-gray_7">Design Process</h3>
+          <p class="text-sm text-gray_5">
+            The barn house captivates with its blend of rustic charm and modern.
+          </p>
+        </div>
+        </div>
+        <div class="p-6 rounded-md bg-card_3">
+          <img src="assets/vision.png" alt="" />
+          <h3 class="my-3 font-semibold text-gray_7">Supervision </h3>
+          <p class="text-sm text-gray_5">
+            The barn house captivates with its blend of rustic charm and modern.
+          </p>
+        </div>
+        </div>
+        <div class="p-6 rounded-md bg-card_4">
+          <img src="assets/budget-planning.png" alt="" />
+          <h3 class="my-3 font-semibold text-gray_7">Budget Planning</h3>
+          <p class="text-sm text-gray_5">
+            The barn house captivates with its blend of rustic charm and modern.
+          </p>
+        </div>
+        </div>
+      </section>
+
+      <!-- Works Process -->
     </main>
   </body>
 </html>
