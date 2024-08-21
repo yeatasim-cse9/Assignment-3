@@ -32,10 +32,10 @@
               gray_4: "#737373",
               gray_1: "#E9E9E9",
               btn_h: "#ABEF5F80",
-              grey_3: "#A0A0A0",
-              grey_5: "#494949",
-              grey_6: "#212121",
-              grey_7: "#1C1C1C",
+              gray_3: "#A0A0A0",
+              gray_5: "#494949",
+              gray_6: "#212121",
+              gray_7: "#1C1C1C",
               background: "#F4F4F4",
             },
           },
@@ -43,11 +43,13 @@
       };
     </script>
   </head>
-  <body>
+  <body class="bg-background">
     <!-- Header-Section -->
     <header>
       <nav>
-        <div class="navbar bg-base-100 w-11/12 mx-auto flex justify-between">
+        <div
+          class="navbar bg-base-100 w-11/12 mx-auto flex justify-between bg-background"
+        >
           <div class="navbar-start">
             <i
               class="fa-solid fa-arrow-right bg-btn_main p-2 -rotate-45 rounded-full mr-2"
@@ -89,10 +91,10 @@
 
           <div class="navbar-end hidden md:flex">
             <i
-              class="fa-solid fa-magnifying-glass bg-gray_1 text-gray_4 rounded-full p-3 mr-2"
+              class="fa-solid fa-magnifying-glass bg-white text-gray_4 rounded-full p-3 mr-2"
             ></i>
             <i
-              class="fa-solid fa-cart-shopping bg-gray_1 text-gray_4 rounded-full p-3 mr-2"
+              class="fa-solid fa-cart-shopping bg-white text-gray_4 rounded-full p-3 mr-2"
             ></i>
             <a class="btn bg-btn_main font-semibold text-xl rounded-full">
               Book Consult
@@ -148,7 +150,7 @@
           </p>
           <div>
             <button
-              class="btn bg-btn_h rounded-full text-lg font-semibold text-gray_6 hover:bg-lime-200"
+              class="btn bg-btn_h rounded-full text-lg font-semibold text-gray_6 hover:bg-lime-200 mb-10"
             >
               View Details
               <i
@@ -160,5 +162,72 @@
       </div>
     </header>
     <!-- header-section-ends -->
+    <!-- main-section-start -->
+    <main class="bg-gray_1 p-6">
+      <div class="w-11/12 mx-auto mt-4">
+        <div
+          class="flex flex-col flex-1 md:flex-row justify-center items-center gap-4"
+        >
+          <div class="flex-1 space-y-3">
+            <img
+              class="hidden md:block lg:flex mb-2 rotate-6 -ml-10"
+              src="assets/Vector.png"
+              alt=""
+            />
+            <div class="flex justify-center sm:justify-start">
+              <button class="bg-white rounded-full px-10 py-3">
+                <i class="fa-solid fa-arrow-right mr-3"></i>About Us
+              </button>
+            </div>
+
+            <h3
+              class="text-4xl font-extrabold text-center md:text-left text-gray_6"
+            >
+              We design thoughtful,<br />liveable spaces
+            </h3>
+            <p class="text-gray_5 text-center md:text-left">
+              The barn house captivates with its blend of rustic charm and
+              modern sophistication, featuring weathered wood, sleek metal
+              accents
+            </p>
+            <div class="flex flex-wrap gap-4">
+              <div
+                class="bg-white rounded-md shadow flex py-6 px-4 gap-6 items-center"
+              >
+                <img class="w-16 h-16" src="assets/commercial.png" alt="" />
+                <div class="flex flex-col gap-2">
+                  <h4 class="text-gray_5 font-semibold">Commercial</h4>
+                  <p class="text-gray_4">
+                    The barn house captivates with its blend of rustic charm and
+                    modern sophistication, featuring weathered wood, sleek metal
+                    accents.
+                  </p>
+                </div>
+              </div>
+              <div
+                class="bg-white rounded-md shadow flex py-6 px-4 gap-6 mb-8 items-center"
+              >
+                <img class="w-16 h-16" src="assets/residential.png" alt="" />
+                <div class="flex flex-col gap-2">
+                  <h4 class="text-gray_5 font-semibold">Residential</h4>
+                  <p class="text-gray_4">
+                    The barn house captivates with its blend of rustic charm and
+                    modern sophistication, featuring weathered wood, sleek metal
+                    accents.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="flex-1 h-full">
+            <img
+              class="w-full h-full object-cover"
+              src="assets/Rectangle.png"
+              alt="Image description"
+            />
+          </div>
+        </div>
+      </div>
+    </main>
   </body>
 </html>
