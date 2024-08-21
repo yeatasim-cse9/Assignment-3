@@ -41,7 +41,11 @@
               card_2: "#EFDA6E",
               card_3: "#A4DAC3",
               card_4: "#77AAEA",
+              connect:"#ABEF5F33",
             },
+             backgroundImage: {
+          'custom-pattern': "url('./assets/bg.jpg')",
+        },
           },
         },
       };
@@ -290,5 +294,51 @@
 
       <!-- Works Process -->
     </main>
+<!-- footer-section-start -->
+    <footer class="py-24 bg-center bg-cover bg-custom-pattern">
+      <div
+          class="flex flex-col items-center justify-center w-11/12 mx-auto my-10 space-y-4"
+        >
+          <div>
+            <button class="px-8 py-3 font-semibold rounded-full bg-connect text-gray_5">
+              <i class="mr-2 fa-solid fa-arrow-right"></i>Let’s Connect
+            </button>
+          </div>
+          <h3 class="text-4xl font-bold text-gray_6">Our Works Process</h3>
+          <p class="text-sm text-gray_4">
+            The barn house captivates with its blend of rustic charm and modern
+            sophistication, featuring weathered wood, sleek metal accents.
+          </p>
+      </div>
+      <div>
+<div class="grid w-11/12 grid-cols-1 gap-6 mx-auto md:grid-cols-2 ">
+           <div><input
+  type="text"
+  placeholder="First Name*"
+  class="w-full rounded-full input input-bordered" /></div>
+
+   <div><input
+  type="text"
+  placeholder="Last Name*"
+  class="w-full rounded-full input input-bordered" /></div>
+
+   <div><input
+  type="text"
+  placeholder="Phone Number*"
+  class="w-full rounded-full input input-bordered" /></div>
+
+   <div><input
+  type="text"
+  placeholder="Email Number*"
+  class="w-full rounded-full input input-bordered" /></div>
+
+  <div class="md:col-span-2">
+    <textarea class="w-full p-2 border rounded-xl" rows="5" placeholder="Enter your text here"></textarea>
+  </div>
+  
+        </div>
+ 
+    </footer>
+<!-- footer-section-ends -->
   </body>
 </html>
