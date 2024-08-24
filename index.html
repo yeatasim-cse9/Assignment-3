@@ -20,7 +20,10 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-
+    <!-- font-link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
     <!-- Custom-Color -->
     <script>
       tailwind.config = {
@@ -46,12 +49,15 @@
              backgroundImage: {
           'custom-pattern': "url('./assets/bg.jpg')",
         },
+        fontFamily: {
+        manrope: ['Manrope', 'sans-serif'],
+      },
           },
         },
       };
     </script>
   </head>
-  <body class="bg-background">
+  <body class="bg-background font-manrope">
     <!-- Header-Section -->
     <header>
       <nav>
@@ -148,7 +154,7 @@
         </div>
         <!-- text-container -->
         <div class="space-y-8 text-center">
-          <h1 class="text-5xl font-bold">
+          <h1 class="text-5xl font-extrabold">
             A barn house of this design has a striking appearance
           </h1>
           <p>
@@ -248,7 +254,7 @@
               <i class="mr-2 fa-solid fa-arrow-right"></i>How we works
             </button>
           </div>
-          <h3 class="text-4xl font-bold text-gray_6">Our Seamless Process</h3>
+          <h2 class="text-4xl font-extrabold text-gray_6">Our Seamless Process</h2>
           <p class="text-sm text-gray_4">
             From concept to completion, we ensure every step of our process is transparent and client-focused. Our goal is to bring your vision to life with expert craftsmanship and attention to detail.
           </p>
@@ -291,10 +297,8 @@
 
       <!-- Works Process -->
 
-      <!-- latest portfolio start -->
-
-
-<section class="grid grid-cols-1 gap-6 px-10 mb-10 lg:grid-cols-4 md:grid-cols-2 bg-background">
+<!-- latest portfolio start -->
+<section class="grid grid-cols-1 gap-6 px-10 pb-10 lg:grid-cols-4 md:grid-cols-2 bg-background">
 <section class="w-full mt-10 md:col-span-2 lg:col-span-4 bg-background">
         <div
           class="flex flex-col items-center justify-center w-11/12 mx-auto mb-5 space-y-4"
@@ -304,7 +308,7 @@
               <i class="mr-2 fa-solid fa-arrow-right"></i>Explore our Latest works
             </button>
           </div>
-          <h3 class="text-4xl font-bold text-center text-gray_6">Our Latest Portfolio</h3>
+          <h2 class="text-4xl font-extrabold text-center text-gray_6">Our Latest Portfolio</h2>
           <p class="text-sm text-center text-gray_4">
             Browse through our portfolio to see how we've transformed spaces with our innovative designs and attention to detail.
           </p></div>
@@ -313,7 +317,7 @@
     <img class="w-64" src="assets/img1.png" alt="">
     <div>
     <h4 class="mb-2 text-lg font-semibold text-gray_5">Commercial</h4>
-    <p class="mb-2 text-sm text-gray_4">The barn house captivates with its blend of rustic charm and modern. The barn house captivates with its blend of rustic charm and modern .</p>
+    <p class="mb-2 text-sm text-gray_4">Discover how we've brought visions to life through a seamless blend of creativity and craftsmanship. Explore our projects to see how each design reflects our commitment to excellence and attention to detail.</p>
     <button class="text-xl font-bold text-gray_6">View Details
     <i class="p-2 mr-2 -rotate-45 rounded-full fa-solid fa-arrow-right bg-btn_main"></i>
     </button>
@@ -333,7 +337,7 @@
     <img class="w-full" src="assets/img4.png" alt="">
     <div>
     <h4 class="mb-2 text-lg font-semibold text-gray_5">Commercial</h4>
-    <p class="mb-2 text-sm text-gray_4">The barn house captivates with its blend of rustic charm and modern. The barn house captivates with its blend of rustic charm and modern .</p>
+    <p class="mb-2 text-sm text-gray_4">A harmonious blend of rustic charm and contemporary elegance, this barn house showcases our ability to merge traditional elements with modern aesthetics, creating a warm and inviting space that feels both timeless and innovative.</p>
     <button class="text-xl font-bold text-gray_6">View Details
     <i class="p-2 mr-2 -rotate-45 rounded-full fa-solid fa-arrow-right bg-btn_main"></i>
     </button>
@@ -345,9 +349,95 @@
   </div>
 
 </section>
-
 <!-- grid section-end -->
  
+<!-- unique-section -->
+ <div class="py-10 pb-20 bg-background">
+  <h2 class="text-4xl font-extrabold text-center mb-14 text-gray_7">What Our Clients Say</h2>
+  <section class="relative flex flex-col items-center w-11/12 mx-auto md:flex-row-reverse ">
+    <div class="w-full gap-3 rounded-lg shadow-lg lg:w-2/3 lg:absolute md:left-0 carousel ">
+      <div id="slide1" class="w-full carousel-item">
+        <div class="flex flex-col justify-center p-10 space-y-6 bg-white rounded-lg">
+          <p class="text-sm leading-5 md:text-lg text-gray_4">
+            Working with Rinterio was an absolute pleasure. Their attention to detail and innovative designs transformed our space into a stunning work of art.
+          <!-- Customer Info -->
+          <div class="flex items-center space-x-4 ">
+            <img src="assets/image-1.jpg" alt="" class="rounded-full w-14 h-14 " />
+            <div >
+              <h5 class="text-sm font-semibold text-gray_6">Jane Doe</h5>
+              <p class="text-xs font-extralight text-gray_5">Homeowner</p>
+            </div>
+          </div>
+          <div class="flex justify-center gap-3 md:justify-start">
+            <a href="#slide4" class="text-white bg-black btn btn-circle">❮</a>
+            <a href="#slide2" class="text-white bg-black btn btn-circle">❯</a>
+          </div>
+        </div>
+      </div>
+      <div id="slide2" class="w-full carousel-item">
+        <div class="flex flex-col p-10 space-y-6 bg-white rounded-lg">
+          <p class="text-sm leading-5 md:text-lg text-gray_4">
+            The design team at Rinterio exceeded all our expectations. They perfectly balanced functionality with elegance, turning our vision into reality. Highly recommended!
+          </p>
+          <!-- Customer Info -->
+          <div class="flex items-center space-x-4">
+            <img src="assets/image-2.jpg" alt="" class="w-16 h-16 rounded-full" />
+            <div>
+              <h5 class="text-sm font-semibold text-gray_6">John Smith</h5>
+              <p class="text-xs font-extralight text-gray_5">Interior Designer</p>
+            </div>
+          </div>
+          <div class="flex justify-center gap-3 md:justify-start">
+            <a href="#slide1" class="text-white bg-black btn btn-circle">❮</a>
+            <a href="#slide3" class="text-white bg-black btn btn-circle">❯</a>
+          </div>
+        </div>
+      </div>
+      <div id="slide3" class="w-full carousel-item">
+        <div class="flex flex-col p-10 space-y-6 bg-white rounded-lg">
+          <p class="text-sm leading-5 md:text-lg text-gray_4">
+            Rinterio brought our dream home to life. Their expertise in blending modern aesthetics with timeless design elements is unparalleled. We are thrilled with our new space.
+          </p>
+          <!-- Customer Info -->
+          <div class="flex items-center space-x-4">
+            <img src="assets/image-3.jpg" alt="" class="w-16 h-16 rounded-full" />
+            <div>
+              <h5 class="text-sm font-semibold text-gray_6">Alice Brown</h5>
+              <p class="text-xs font-extralight text-gray_5">Architect</p>
+            </div>
+          </div>
+          <div class="flex justify-center gap-3 md:justify-start">
+            <a href="#slide2" class="text-white bg-black btn btn-circle">❮</a>
+            <a href="#slide4" class="text-white bg-black btn btn-circle">❯</a>
+          </div>
+        </div>
+      </div>
+      <div id="slide4" class="w-full carousel-item">
+        <div class="flex flex-col p-10 space-y-6 bg-white rounded-lg">
+          <p class="text-sm leading-5 md:text-lg text-gray_4">
+              Rinterio's creative approach and commitment to quality made our home transformation exceptional. We're thrilled with the results!
+          </p>
+          <!-- Customer Info -->
+          <div class="flex items-center space-x-4">
+            <img src="assets/image-4.jpg" alt="" class="w-16 h-16 rounded-full" />
+            <div>
+              <h5 class="text-sm font-semibold text-gray_6">Michael Lee</h5>
+              <p class="text-xs font-extralight text-gray_5">Real Estate Developer</p>
+            </div>
+          </div>
+          <div class="flex justify-center gap-3 md:justify-start">
+            <a href="#slide3" class="text-white bg-black btn btn-circle">❮</a>
+            <a href="#slide1" class="text-white bg-black btn btn-circle">❯</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="hidden lg:flex">
+      <img class="object-cover max-h-full rounded-lg hover:shadow-xl" src="assets/20 Modern Mountain Home Design Ideas (2).jpeg" alt="" />
+    </div>
+  </section>
+</div>
     </main>
 <!-- footer-section-start -->
     <footer class="bg-no-repeat bg-cover pt-18 bg-custom-pattern">
@@ -403,7 +493,7 @@
  
     </footer>
 
-        <!-- last-section-start -->
+    <!-- last-section-start -->
      <section class="pt-18 bg-gray_7">
       <div class="grid w-11/12 grid-cols-1 py-10 mx-auto space-y-8 text-center">
         <div class="flex items-center justify-center">
@@ -430,9 +520,9 @@
       
 
      </section>
-     
-     
-     <!-- last-section-ends -->
+    <!-- last-section-ends -->
+
+
 <!-- footer-section-ends -->
   </body>
 </html>
